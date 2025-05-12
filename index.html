@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoreX | Fitness Trainer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Sticky Navbar (Over Hero) -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="logo">
+        <img src="images/logo-bg4.png" alt="Fitness Logo" />
+      </div>
+      <div class="hamburger" id="hamburger-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#testimonials">Success Stories</a></li>
+        <li><a href="#booking">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <video autoplay muted loop class="hero-bg">
+      <source src="images/hvid2.mp4" type="video/mp4" />
+      <img src="images/hero.jpg" alt="Clients working out" />
+    </video>
+    <div class="hero-content">
+      <h1>Transform Your Body. Empower Your Mind.</h1>
+      <p>Personalized training for real results—no matter your level.</p>
+      <button class="cta-button" id="book-cta">
+        Book Your Free Assessment
+      </button>
+    </div>
+  </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="section-header">
+        <h2>Services Offered</h2>
+        <div class="toggle-container">
+          <button class="toggle-btn active" data-filter="all">
+            All Services
+          </button>
+          <button class="toggle-btn" data-filter="in-person">In-Person</button>
+          <button class="toggle-btn" data-filter="online">Online</button>
+        </div>
+      </div>
+
+      <div class="services-grid">
+        <!-- 1-on-1 Training -->
+        <div class="service-card" data-category="in-person">
+          <div class="service-icon">💪</div>
+          <h3>1-on-1 Personal Training</h3>
+          <p>
+            Tailored sessions with undivided attention to maximize your results.
+          </p>
+        </div>
+
+        <!-- Online Coaching -->
+        <div class="service-card" data-category="online">
+          <div class="service-icon">🌐</div>
+          <h3>Online Coaching</h3>
+          <p>
+            Virtual training from anywhere, with custom plans and live feedback.
+          </p>
+        </div>
+
+        <!-- Workout Plans -->
+        <div class="service-card" data-category="online">
+          <div class="service-icon">📝</div>
+          <h3>Customized Workout Plans</h3>
+          <p>
+            Get a science-backed plan designed for your goals and lifestyle.
+          </p>
+        </div>
+
+        <!-- Nutrition -->
+        <div class="service-card" data-category="all">
+          <div class="service-icon">🥗</div>
+          <h3>Nutrition Guidance</h3>
+          <p>
+            Macro tracking, meal plans, and habit coaching for sustainable
+            results.
+          </p>
+        </div>
+
+        <!-- Pre/Post-natal -->
+        <div class="service-card" data-category="in-person">
+          <div class="service-icon">🤰</div>
+          <h3>Pre/Post-Natal Fitness</h3>
+          <p>Safe, effective workouts for mothers at every stage.</p>
+        </div>
+
+        <!-- Senior Fitness -->
+        <div class="service-card" data-category="in-person">
+          <div class="service-icon">🧓</div>
+          <h3>Senior Fitness & Recovery</h3>
+          <p>Regain mobility and strength with low-impact training.</p>
+        </div>
+
+        <!-- Transformation -->
+        <div class="service-card" data-category="all">
+          <div class="service-icon">🔥</div>
+          <h3>Transformation Programs</h3>
+          <p>4-12 week programs for total body and mindset changes.</p>
+        </div>
+
+        <!-- Group Fitness -->
+        <div class="service-card" data-category="in-person">
+          <div class="service-icon">👥</div>
+          <h3>Group Fitness Classes</h3>
+          <p>
+            High-energy sessions with a community vibe for motivation and fun.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages & Pricing Section -->
+    <section id="pricing" class="pricing">
+      <div class="section-header">
+        <h2>Packages & Pricing</h2>
+        <p>Choose your transformation level</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Starter Tier -->
+        <div class="pricing-card starter">
+          <div class="package-icon">🧩</div>
+          <h3>Starter Plan</h3>
+          <p class="package-desc">Ideal for beginners or a test run</p>
+          <div class="price">$120<span>/month</span></div>
+          <ul class="features">
+            <li>4 sessions/month</li>
+            <li>Basic workout plan</li>
+            <li>Email support</li>
+          </ul>
+          <button class="cta-button">Get Started</button>
+        </div>
+
+        <!-- Commit Tier (Highlighted) -->
+        <div class="pricing-card commit">
+          <div class="package-icon">⚔️</div>
+          <div class="popular-badge">Most Popular</div>
+          <h3>Commit & Conquer</h3>
+          <p class="package-desc">For serious lifestyle changes</p>
+          <div class="price">$200<span>/month</span></div>
+          <ul class="features">
+            <li>8 sessions/month</li>
+            <li>Nutrition tracking</li>
+            <li>Priority booking</li>
+            <li>Bi-weekly check-ins</li>
+          </ul>
+          <button class="cta-button">Commit Now</button>
+        </div>
+
+        <!-- Elite Tier -->
+        <div class="pricing-card elite">
+          <div class="package-icon">👑</div>
+          <h3>Elite Transformation</h3>
+          <p class="package-desc">Full body, mind, and habit change</p>
+          <div class="price">$320<span>/month</span></div>
+          <ul class="features">
+            <li>12 sessions/month</li>
+            <li>Custom meal plans</li>
+            <li>Daily check-ins</li>
+            <li>24/7 coach access</li>
+          </ul>
+          <button class="cta-button">Transform Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section id="testimonials" class="testimonials">
+      <div class="section-header">
+        <h2>Success Stories</h2>
+        <p>Real people. Real transformations.</p>
+      </div>
+
+      <div class="testimonial-grid">
+        <!-- Male Before/After -->
+        <div class="testimonial-card">
+          <div class="before-after">
+            <div class="before">
+              <img src="images/male-before.jpg" alt="Before training" />
+              <p class="label">Before</p>
+            </div>
+            <div class="after">
+              <img src="images/male-after.jpg" alt="After training" />
+              <p class="label">After</p>
+            </div>
+          </div>
+          <div class="testimonial-quote">
+            <p>
+              "I went from barely lifting 20lbs to deadlifting 250lbs in 5
+              months. My confidence is through the roof!"
+            </p>
+            <div class="client-details">
+              <span class="name">Mark T.</span>
+              <span class="results">• 5 months • Strength Gain</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Female Before/After -->
+        <div class="testimonial-card">
+          <div class="before-after">
+            <div class="before">
+              <img src="images/female-before.jpg" alt="Before training" />
+              <p class="label">Before</p>
+            </div>
+            <div class="after">
+              <img src="images/female-after.jpg" alt="After training" />
+              <p class="label">After</p>
+            </div>
+          </div>
+          <div class="testimonial-quote">
+            <p>
+              "Postpartum recovery felt impossible until I started training. Now
+              I’m stronger than ever!"
+            </p>
+            <div class="client-details">
+              <span class="name">Sarah L.</span>
+              <span class="results">• 6 months • Postnatal Fitness</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Testimonial 1 (Male) -->
+        <div class="testimonial-card text-card">
+          <div class="quote-icon">“</div>
+          <div class="testimonial-quote">
+            <p>
+              "The personalized nutrition plan helped me drop 15% body fat
+              without starving myself. Game-changer!"
+            </p>
+            <div class="client-details">
+              <span class="name">Alex P.</span>
+              <span class="results">• 3 months • Fat Loss</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Testimonial 2 (Female) -->
+        <div class="testimonial-card text-card">
+          <div class="quote-icon">“</div>
+          <div class="testimonial-quote">
+            <p>
+              "At 52, I thought my best years were behind me. Now I’m lifting
+              weights and hiking mountains!"
+            </p>
+            <div class="client-details">
+              <span class="name">Rita M.</span>
+              <span class="results">• 8 months • Senior Fitness</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+      <div class="section-header">
+        <h2>Ready to Transform?</h2>
+        <p>Book your free assessment session today</p>
+      </div>
+
+      <div class="booking-container">
+        <form id="booking-form" class="booking-form">
+          <div class="form-group">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select Service</option>
+              <option value="personal-training">
+                1-on-1 Personal Training
+              </option>
+              <option value="online-coaching">Online Coaching</option>
+              <option value="nutrition">Nutrition Guidance</option>
+              <option value="transformation">Transformation Program</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your fitness goals (optional)"
+            ></textarea>
+          </div>
+          <button type="submit" class="cta-button">Book My Free Session</button>
+        </form>
+
+        <div id="success-message" class="success-message">
+          <h3>Thank you!</h3>
+          <p>
+            We've received your request. You'll be contacted via email within 24
+            hours to confirm your session.
+          </p>
+          <div class="success-icon">✓</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="footer">
+      <div class="footer-container">
+        <div class="footer-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215256837036!2d-73.9878449245253!3d40.74844097138944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1712345678901!5m2!1sen!2sus"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <div class="footer-info">
+          <div class="contact-methods">
+            <h3>Get In Touch</h3>
+            <p><strong>Email:</strong> coach@fitnesstrainer.com</p>
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+            <p><strong>Address:</strong> 123 Fitness Ave, Gym City</p>
+          </div>
+
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Made with <span class="heart">♥</span> by <a href="#" target="_blank">MJawadSial</a></p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a> |
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
